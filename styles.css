@@ -1,0 +1,296 @@
+/* styles.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #d4a276;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0; /* Ensures it sticks to the top */
+    z-index: 1000; /* Optional: To make sure it stays on top of other content */
+}
+
+
+.navbar-left h1 {
+    margin: 0;
+    color: #543512;
+    font-size: 24px;
+}
+
+.navbar-right {
+    display: flex;
+    gap: 10px;
+}
+
+.btn {
+    padding: 10px 15px;
+    font-size: 16px;
+    color: #e1bb80;
+    background-color: #543512;
+    border: 1px solid #543512;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn:hover {
+    color: #fff; /* White text on hover */
+    background-color: #8a4a2f; /* Lighter background color on hover */
+    border-color: #8a4a2f; /* Lighter border color */
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+.signup-btn {
+    background-color: #543512;
+    color: #e1bb80;
+    border-color: #543512;
+}
+
+.signup-btn:hover {
+    color: #fff; /* White text on hover */
+    background-color: #8a4a2f; /* Lighter background color on hover */
+    border-color: #8a4a2f; /* Lighter border color */
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+/* Main Content Styles */
+.quiz-app {
+    text-align: center;
+    margin: 50px auto;
+    flex: 1;
+}
+
+.title {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.quiz-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+    width: 300px;
+    height: 500px;
+}
+
+.quiz-button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.quiz-button img {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 10px;
+}
+
+.quiz-button p {
+    font-size: 18px;
+    color: #333;
+    margin: 0;
+}
+
+/* Modals */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    position: relative;
+    text-align: center;
+}
+
+.modal-content h2 {
+    margin: 0 0 20px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.modal-content form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.modal-content label {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.modal-content input {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.modal-content button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #543512;
+    color: #D4A276;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.modal-content button:hover {
+    background-color: #D4A276;
+    color: #543512;
+}
+
+/* Close Button */
+.modal-content .close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #aaa;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.modal-content .close:hover {
+    color: black;
+}
+
+/* Sweet Alert Styling */
+.swal2-popup {
+    font-size: 16px;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #D4A276;
+    color: #543512;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Footer Section */
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-section h2 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #543512;
+}
+
+.footer-section p,
+.footer-section ul {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #543512;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+/* .footer-section ul li a:hover {
+    color: #D4A276;
+} */
+
+/* Social Icons */
+.social-icon {
+    display: inline-block;
+    margin-right: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.social-icon,
+.social-icon,
+.fa-square-instagram {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.social-icon:hover {
+    font-size: 30px;
+    /* Icon ka size hover hone par 30px ho jayega */
+    transition: transform 0.3s ease-in-out, font-size 0.3s ease-in-out;
+    /* Smooth transition with ease-in-out */
+    cursor: pointer;
+    /* Hover par pointer cursor */
+    transform: scale(1.1) translateY(-5px);
+    /* Smooth zoom in with slight upward movement */
+}
+
+
+
+
+
+
+/* Footer Bottom */
+.footer-bottom {
+    text-align: center;
+    padding-top: 10px;
+    border-top: 1px solid #543512;
+    font-size: 14px;
+}
