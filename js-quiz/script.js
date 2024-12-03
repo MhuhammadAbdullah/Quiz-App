@@ -1,5 +1,5 @@
 // Quiz Data
-const questions = [
+var questions = [
     {
         question: "What does JavaScript stand for?",
         options: ["Java Syntax", "Just Some Basic Text", "Java Standard", "None of the above"],
@@ -52,17 +52,17 @@ const questions = [
     }
 ];
 
-let timeLeft = 60;
-let currentQuestionIndex = 0;
-let correctAnswers = 0;
-let timerInterval;
+var timeLeft = 60;
+var currentQuestionIndex = 0;
+var correctAnswers = 0;
+var timerInterval;
 
 // DOM Elements
-const timerElement = document.getElementById('timer');
-const progressBar = document.getElementById('timer-progress');
-const questionContainer = document.querySelector('.question');
-const optionsContainer = document.querySelector('.options');
-const questionNumberElement = document.getElementById('question-number');
+var timerElement = document.getElementById('timer');
+var progressBar = document.getElementById('timer-progress');
+var questionContainer = document.querySelector('.question');
+var optionsContainer = document.querySelector('.options');
+var questionNumberElement = document.getElementById('question-number');
 
 // Initialize Quiz
 function initializeQuiz() {
@@ -88,11 +88,11 @@ function startTimer() {
 
 // Display Question
 function displayQuestion() {
-    const questionData = questions[currentQuestionIndex];
+    var questionData = questions[currentQuestionIndex];
     questionContainer.textContent = questionData.question;
     optionsContainer.innerHTML = '';
     questionData.options.forEach((option, index) => {
-        const optionElement = document.createElement('li');
+        var optionElement = document.createElement('li');
         optionElement.innerHTML = `
             <input type="radio" name="option" value="${index}"> ${option}
         `;
@@ -104,7 +104,7 @@ function displayQuestion() {
 
 // Handle Next Question
 function nextQuestion() {
-    const selectedOption = document.querySelector('input[name="option"]:checked');
+    var selectedOption = document.querySelector('input[name="option"]:checked');
     if (selectedOption && parseInt(selectedOption.value) === questions[currentQuestionIndex].correctAnswer) {
         correctAnswers++;
     }
@@ -120,7 +120,7 @@ function nextQuestion() {
 function endQuiz(status) {
     clearInterval(timerInterval);
 
-    let scorePercentage = ((correctAnswers / questions.length) * 100).toFixed(2);
+    var scorePercentage = ((correctAnswers / questions.length) * 100).toFixed(2);
     if (status === 'timeUp') {
         Swal.fire({
             title: "Time's Up!",
