@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 /* styles.css */
 body {
+    font-family: 'Poppins', Arial, sans-serif;
     margin: 0;
-    font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     display: flex;
     flex-direction: column;
@@ -16,8 +18,8 @@ body {
     background-color: #d4a276;
     padding: 10px 20px;
     position: sticky;
-    top: 0; /* Ensures it sticks to the top */
-    z-index: 1000; /* Optional: To make sure it stays on top of other content */
+    top: 0;
+    z-index: 1000;
 }
 
 
@@ -44,10 +46,10 @@ body {
 }
 
 .btn:hover {
-    color: #fff; /* White text on hover */
-    background-color: #8a4a2f; /* Lighter background color on hover */
-    border-color: #8a4a2f; /* Lighter border color */
-    transform: scale(1.05); /* Slightly enlarge the button on hover */
+    color: #fff;
+    background-color: #8a4a2f;
+    border-color: #8a4a2f;
+    transform: scale(1.05);
 }
 
 .signup-btn {
@@ -57,10 +59,10 @@ body {
 }
 
 .signup-btn:hover {
-    color: #fff; /* White text on hover */
-    background-color: #8a4a2f; /* Lighter background color on hover */
-    border-color: #8a4a2f; /* Lighter border color */
-    transform: scale(1.05); /* Slightly enlarge the button on hover */
+    color: #fff;
+    background-color: #8a4a2f;
+    border-color: #8a4a2f;
+    transform: scale(1.05);
 }
 
 /* Main Content Styles */
@@ -250,10 +252,6 @@ body {
     transition: color 0.3s ease;
 }
 
-/* .footer-section ul li a:hover {
-    color: #D4A276;
-} */
-
 /* Social Icons */
 .social-icon {
     display: inline-block;
@@ -273,19 +271,10 @@ body {
 
 .social-icon:hover {
     font-size: 30px;
-    /* Icon ka size hover hone par 30px ho jayega */
     transition: transform 0.3s ease-in-out, font-size 0.3s ease-in-out;
-    /* Smooth transition with ease-in-out */
     cursor: pointer;
-    /* Hover par pointer cursor */
     transform: scale(1.1) translateY(-5px);
-    /* Smooth zoom in with slight upward movement */
 }
-
-
-
-
-
 
 /* Footer Bottom */
 .footer-bottom {
