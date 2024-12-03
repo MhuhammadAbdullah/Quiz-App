@@ -1,5 +1,5 @@
 // Variable to Track User Authentication
-let isAuthenticated = false;
+var isAuthenticated = false;
 
 // Open Modal Function
 function openModal(modalId) {
@@ -67,7 +67,7 @@ function startQuiz(topic) {
             confirmButtonText: 'Start'
         }).then(() => {
             // Redirect to the quiz page for the selected topic
-            let url = '';
+            var url = '';
             switch (topic) {
                 case 'HTML':
                     url = '/html-quiz/html-page.html';  // Change the URL according to your file structure
