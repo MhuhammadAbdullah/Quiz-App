@@ -155,7 +155,7 @@ function showResult(scorePercentage) {
         if (result.isConfirmed) {
             restartQuiz();
         } else {
-            window.location.href = '../home.html';  // Redirect to the main page
+            window.location.href = '../home/home.html';  // Redirect to the main page
         }
     });
 }

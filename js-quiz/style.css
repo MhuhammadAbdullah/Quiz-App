@@ -10,12 +10,13 @@
 /* Body Styles */
 body {
     font-family: 'Poppins', Arial, sans-serif;
-    background: linear-gradient(to bottom right, #ECDA1D, #ECDA1D);
+    background: #ECDA1D;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     color: #333;
+    overflow: hidden;
 }
 
 .heading img {
@@ -87,8 +88,8 @@ body {
 
 .options li:hover,
 .options li:focus-within {
-    background-color: #eef2ff;
-    border-color: #007BFF;
+    background-color: #fcf49e;
+    border-color: #ECDA1D;
 }
 
 .options input {
@@ -107,7 +108,7 @@ button {
     padding: 10px 20px;
     font-size: 16px;
     font-weight: 500;
-    background: #007BFF;
+    background: #ECDA1D;
     color: white;
     border: none;
     border-radius: 8px;
@@ -116,7 +117,7 @@ button {
 }
 
 button:hover {
-    background: #0056b3;
+    background: #FF8A00;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 

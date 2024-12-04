@@ -9,7 +9,7 @@
 /* Body Styles */
 body {
     font-family: 'Poppins', Arial, sans-serif;
-    background: linear-gradient(to bottom right, #6a11cb, #2575fc);
+    background: #2575fc;
     display: flex;
     justify-content: center;
     align-items: center;

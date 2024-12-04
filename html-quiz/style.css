@@ -9,7 +9,7 @@
 /* Body Styles */
 body {
     font-family: 'Poppins', Arial, sans-serif;
-    background: linear-gradient(to bottom right, #cb5b11, #fcb125);
+    background: #cb5b11;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -81,8 +81,8 @@ body {
 
 .options li:hover,
 .options li:focus-within {
-    background-color: #eef2ff;
-    border-color: #007BFF;
+    background-color: #ffbd8a;
+    border-color: #D06413;
 }
 
 .options input {
@@ -101,7 +101,7 @@ button {
     padding: 10px 20px;
     font-size: 16px;
     font-weight: 500;
-    background: #007BFF;
+    background: #F4A222;
     color: white;
     border: none;
     border-radius: 8px;
@@ -109,8 +109,8 @@ button {
     transition: all 0.3s ease-in-out;
 }
 
-button:hover {
-    background: #0056b3;
+.buttons button:hover {
+    background: #D06413;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
