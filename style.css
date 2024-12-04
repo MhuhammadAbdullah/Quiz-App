@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #D4A276;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #543512;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    color: #D4A276;
+    font-size: 30px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.auth-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.auth-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+    margin-top: 150px;
+}
+
+.auth-container h1 {
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input {
+    width: 93%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #543512;
+}
+
+.password-container {
+    position: relative;
+}
+
+
+.password-container button {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: #555;
+    padding: 0;
+}
+
+button[type="submit"] {
+    background-color: #543512;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #D4A276;
+    color: #543512;
+}
+
+p {
+    font-size: 14px;
+    color: #D4A276;
+}
+
+p a {
+    color: #543512;
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #543512;
+    color: #D4A276;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Footer Section */
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-section h2 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #D4A276;
+}
+
+.footer-section p,
+.footer-section ul {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #D4A276;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #D4A276;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+/* Social Icons */
+.social-icon {
+    display: inline-block;
+    margin-right: 10px;
+    text-decoration: none;
+    color: #D4A276;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.social-icon,
+.social-icon,
+.fa-square-instagram {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.social-icon:hover {
+    font-size: 30px;
+    transition: transform 0.3s ease-in-out, font-size 0.3s ease-in-out;
+    cursor: pointer;
+    transform: scale(1.1) translateY(-5px);
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    text-align: center;
+    /* padding-top: 10px; */
+    border-top: 1px solid #D4A276;
+    font-size: 14px;
+}

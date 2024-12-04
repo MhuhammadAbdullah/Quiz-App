@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Attempt</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+
+    <div class="quiz-container">
+        <div class="heading">
+            <img src="../assets/CSS-Logo.png" alt="HTML Logo">
+        </div>
+        <div class="timer">
+            <div id="timer">60</div>
+            <div class="timer-bar">
+                <div id="timer-progress" class="timer-progress"></div>
+            </div>
+        </div>
+        
+        <div id="question-number">Question 1/10</div>
+    
+        <div class="question">
+            Question will appear here.
+        </div>
+    
+        <ul class="options">
+            <!-- Options will be dynamically inserted here -->
+        </ul>
+    
+        <div class="buttons">
+            <button id="submit-btn" onclick="nextQuestion()">Submit</button>
+        </div>
+    </div>
+    
+<script src="script.js"></script>
+
+</body>
+</html>
