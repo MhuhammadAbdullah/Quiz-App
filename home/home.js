@@ -8,7 +8,7 @@ function startQuiz(topic) {
         confirmButtonText: 'Start'
     }).then(() => {
         // Redirect to the quiz page based on the selected topic
-        let url = '';
+        var url = '';
         switch (topic) {
             case 'HTML':
                 url = '/html-quiz/html-page.html';  // Replace with actual URL for HTML quiz
